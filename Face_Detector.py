@@ -26,7 +26,8 @@ while True:
     for (x, y, w, h) in face_coordinates:
         cv2.rectangle(frame, (x, y), (x+w, y+h), (0, randrange(256), 0), 2)
 
-    cv2.imshow('Huso Face Detector', frame)
+    # give the frame a title
+    cv2.imshow('Maps Face Detector', frame)
     key = cv2.waitKey(1)
 
     #stop if Q key is pressed
